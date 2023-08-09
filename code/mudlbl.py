@@ -18,6 +18,6 @@ def mutate():
 if __name__ == '__main__':
     logger = setup_logger(__name__)
 
-    logger.info('DeepCrime started')
+    logger.info('MuDLBL started')
     mutate()
-    logger.info('DeepCrime finished')
+    logger.info('MuDLBL finished')

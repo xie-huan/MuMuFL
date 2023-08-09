@@ -3,11 +3,11 @@ import json
 
 
 def write_properties(data):
-    with open('mutants_properties.json', 'w', encoding='utf-8') as f:
+    with open('mudlbl_properties.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
 
 def read_properties():
-    with open('mutants_properties.json') as data_file:
+    with open('mudlbl_properties.json') as data_file:
         data = json.load(data_file)
     return data

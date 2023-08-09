@@ -1,6 +1,6 @@
 {
-    "benchmark": {
-        "subject_name": "benchmark",
+    "model": {
+        "subject_name": "model",
         "subject_path": "test_models/model_conv.py",
         "mutations": [
             "change_batch_size",

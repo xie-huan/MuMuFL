@@ -1,4 +1,3 @@
-# This code does not belong to the authors of DeepCrime
 # https://svn.python.org/projects/python/trunk/Demo/parser/unparse.py
 
 "Usage: unparse.py <path to source file>"

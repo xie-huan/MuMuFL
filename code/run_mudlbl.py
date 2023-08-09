@@ -6,7 +6,7 @@ import importlib
 
 import utils.properties as props
 import utils.constants as const
-import mutants_properties as mt_props
+import run_mudlbl_properties as dc_props
 from mudlbl import mutate as run_mudlbl_tool
 from utils.constants import save_paths
 from mutation_score import calculate_dc_ms
@@ -21,15 +21,15 @@ data = {
 
 def run_automate():
 
-    data['subject_name'] = 'mnist'
+    data['subject_name'] = 'model'
     data['subject_path'] = os.path.join('test_models', 'model_conv.py')
     data['mutations'] = ["change_optimisation_function"]
 
-    mt_props.write_properties(data)
+    dc_props.write_properties(data)
 
-    shutil.copyfile(os.path.join('utils', 'properties', 'properties_example.py'),
+    shutil.copyfile(os.path.join('utils', 'properties', 'properties_model.py'),
                     os.path.join('utils', 'properties.py'))
-    shutil.copyfile(os.path.join('utils', 'properties', 'constants_example.py'),
+    shutil.copyfile(os.path.join('utils', 'properties', 'constants_model.py'),
                     os.path.join('utils', 'constants.py'))
 
     importlib.reload(props)
@@ -40,7 +40,7 @@ def run_automate():
     if props.MS == 'DC_MS':
         data['mode'] = 'train'
         data['subject_path'] = os.path.join('test_models', 'model_conv_train.py')
-        mt_props.write_properties(data)
+        dc_props.write_properties(data)
 
         test_results = os.path.join(data['root'], save_paths['mutated'],  data['subject_name'], 'results')
         print(test_results)
@@ -64,7 +64,7 @@ def run_automate():
         
         train_accuracy_dir = os.path.join("mutated_models", data['subject_name'], "results_train")
         accuracy_dir = os.path.join("mutated_models", data['subject_name'], "results_test")
-        # calculate_dc_ms(train_accuracy_dir, accuracy_dir)
+        calculate_dc_ms(train_accuracy_dir, accuracy_dir)
 
     print("Finished all, exit")
 

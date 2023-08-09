@@ -187,14 +187,14 @@ nadam = {
 # Keras Batch Sizes: In Reality Should be calculated automatically
 ###
 batch_sizes = [
-   32, 64, 256, 512
+   1, 12, 32, 64, 256, 512
 ]
 
 ###
 # Dropout Values: In Reality Should be calculated automatically
 ###
 dropout_values = [
-   0.125, 0.25, 0.75, 1.0
+   0.125, 0.25, 0.5, 0.75, 1.0
 ]
 
 
@@ -292,11 +292,7 @@ operator_name_dict = {'change_label': 'TCL',
                       'remove_validation_set': 'VRM'}
 
 
-subject_params = {'mnist': {'epochs': 12, 'lower_lr': 0.001, 'upper_lr': 1},
-                  'movie_recomm': {'epochs': 5, 'lower_lr': 0.0001, 'upper_lr': 0.001},
-                  'audio': {'epochs': 50, 'lower_lr': 0.0001, 'upper_lr': 0.001, 'patience': 10},
-                  'lenet': {'epochs': 50, 'lower_lr':  0.001, 'upper_lr': 0.01},
-                  'udacity': {'epochs': 50, 'lower_lr':  0.00001, 'upper_lr': 0.0001}
+subject_params = {'model': {'epochs': 1000, 'lower_lr': 0.001, 'upper_lr': 1}
                   }
 
-subject_short_name = {'mnist': 'MN', 'movie_recomm': 'MR', 'audio': 'SR', 'lenet': 'UE', 'udacity': 'UD'}
+subject_short_name = {'model': 'MN'}

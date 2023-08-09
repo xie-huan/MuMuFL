@@ -3,7 +3,7 @@ import utils.properties as props
 
 from utils.mutation_utils import *
 from utils.logger_setup import setup_logger
-from mutants_properties import read_properties
+from run_mudlbl_properties import read_properties
 
 
 def mutate_model():

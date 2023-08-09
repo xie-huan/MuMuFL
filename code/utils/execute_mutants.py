@@ -10,7 +10,7 @@ import utils.exceptions as e
 from utils.mutation_utils import get_accuracy_list_from_scores, update_mutation_properties, load_scores_from_csv
 from utils.mutation_utils import concat_params_for_file_name, save_scores_csv, modify_original_model, rename_trained_model
 from stats import is_diff_sts
-from mutants_properties import read_properties
+from run_mudlbl_properties import read_properties
 
 
 scores = []

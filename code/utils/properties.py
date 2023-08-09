@@ -11,12 +11,12 @@ statistical_test = "GLM"
 MS = "DC_MS"
 
 model_properties = {
-    "epochs": 12,
-    "batch_size": 128,
+    "epochs": 1000,
+    "batch_size": 4,
     "learning_rate": 1.0,
     "x_train_len": 60000,
     "layers_num": 4,
-    "dropout_layers": {3, 6}
+    "dropout_layers": {1, 4}
 }
 
 # Mutation Change label
@@ -97,9 +97,9 @@ add_noise = {
 change_epochs = {
     "name": 'change_epochs',
     "change_epochs_size": False,
-    "pct": 12,
-    "bs_lower_bound": 12,
-    "bs_upper_bound": 1,
+    "pct": 10000,
+    "bs_lower_bound": 10000,
+    "bs_upper_bound": 10000,
     "bs_rounding_type": 'int',
     "annotation_params": [],
     "search_type": 'binary',
@@ -122,7 +122,7 @@ change_learning_rate = {
     "learning_rate_udp": False,
     "pct": -1,
     "bs_lower_bound": 1.0,
-    "bs_upper_bound": 0.001,
+    "bs_upper_bound": 0.05,
     "annotation_params": [],
     "search_type": 'binary',
     "runs_number": 20,
@@ -142,7 +142,7 @@ disable_batching = {
 change_activation_function = {
     "name": 'change_activation_function',
     "activation_function_udp": False,
-    "layer_udp": 4,
+    "layer_udp": [2, 4],
     "runs_number": 20,
     "annotation_params": [],
     "layer_mutation": True,
@@ -248,7 +248,7 @@ change_loss_function = {
 
 change_dropout_rate = {
     "name": 'change_dropout_rate',
-    "layer_udp": [3, 4],
+    "layer_udp": [1,4],
     "runs_number": 20,
     "dropout_rate_udp": False,
     "annotation_params": [],

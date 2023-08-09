@@ -6,7 +6,7 @@ import collections
 from stats import power
 
 import utils.properties as props
-from mutants_properties import read_properties
+from run_mudlbl_properties import read_properties
 
 
 def get_overall_mutation_score(stats_dir, train_stats_dir, accuracy_dir, lower_lr, prefix, train_accuracy_dir, killed_name_list):
