@@ -2,6 +2,7 @@ from keras.callbacks import EarlyStopping as KES
 from tensorflow.keras.callbacks import EarlyStopping as TKES
 import utils.properties as props
 import utils.exceptions as e
+from tensorflow.keras import backend as K
 
 def operator_change_patience(callbacks=None):
 
@@ -21,3 +22,4 @@ def operator_change_patience(callbacks=None):
                                    "Not possible to apply the change patience mutation")
 
     return callbacks
+
