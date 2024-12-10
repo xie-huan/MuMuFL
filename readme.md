@@ -4,7 +4,7 @@ MuDLBL: Mutation-based Deep Learning Bug Localization to locate the faulty state
 
 ## Overview of MuDLBL
 
-![overview](figures/overview.png)
+![overview](overview.png)
 
 ### Step 1: Mutant Generation
 
