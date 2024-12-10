@@ -1,8 +1,8 @@
-# MuDLBL
+# MuDLFL
 
-MuDLBL: Mutation-based Deep Learning Bug Localization to locate the faulty statements of a DL bug residing in a DL program. 
+MuDLFL: statistical Mutation-based Deep Learning Fault Localization to locate the faulty statements of a DL bug residing in a DL program. 
 
-## Overview of MuDLBL
+## Overview of MuDLFL
 
 ![overview](overview.png)
 
@@ -10,9 +10,9 @@ MuDLBL: Mutation-based Deep Learning Bug Localization to locate the faulty state
 
 After configuring the buggy DL program successfully,  run the tool to be able to get different Mutants.
 
-### Step 2: Bug Localization
+### Step 2: Fault Localization
 
-After DL mutant generation, MuDLBL will run the DL mutants to evaluate DL mutation behavioral differences as the suspiciousness of a statement being faulty.
+After DL mutant generation, MuDLFL will run the DL mutants to evaluate DL mutation behavioral differences as the suspiciousness of a statement being faulty.
 
 ## How to use?
 
@@ -36,7 +36,7 @@ After DL mutant generation, MuDLBL will run the DL mutants to evaluate DL mutati
 
 ### Configure the model
 
-Just put the buggyDL model program in the MuDLBL path: `./prepared_model/model_saved.py`
+Just put the buggyDL model program in the MuDLFL path: `./prepared_model/model_saved.py`
 
 ## Project structure
 
