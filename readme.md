@@ -1,6 +1,6 @@
-# MuDLFL
+# MuMuFL
 
-MuDLFL: statistical Mutation-based Deep Learning Fault Localization to locate the faulty statements of a DL bug residing in a DL program. 
+MuMuFL: statistical Mutation-based Multiple Fault Localization to locate the faulty statements of a deep learning programs. 
 
 ## Overview of MuDLFL
 
