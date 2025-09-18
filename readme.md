@@ -34,6 +34,11 @@ After DL mutant generation, MuDLFL will run the DL mutants to evaluate DL mutati
 - patsy~=0.5.1
 - scipy~=1.4.1
 
+### Environment setup
+All the requirements should be installed before run the tool. Please refer requirements37.txt and requirements38.txt for details. For requirements37.txt file, the version of Python should be 3.7. For requirements38.txt file, the version of Python should be 3.8.
+
+The experiments are conducted on Ubuntu 20.04 server with 40 cores of 2.4GHz CPU, 252GB RAM, and two NVIDIA GeForce RTX 3090 GPUs with 24 GB memory.
+
 ### Configure the model
 
 Just put the buggyDL model program in the MuDLFL path: `./prepared_model/model_saved.py`
